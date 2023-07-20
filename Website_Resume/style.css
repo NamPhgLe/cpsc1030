@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+header {
+    margin: 2%;
+    padding: 2%;
+}
+
+nav {
+    border: 2px double black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 2%;
+    padding: 2%;
+}
+
+
+main {
+    background-color: #D3D3D3;
+    margin: 2%;
+    padding: 2%;
+}
+
+main #hackatons {
+    text-align: left;
+    margin:0 2% 0 2%;
+    padding:0 2% 0 2%;
+}
+
+main #eductaion_list{
+    list-style-type: none;
+}
+
+aside {
+    margin: 2%;
+    padding: 2%;
+}
+
+footer {
+    background-color: #D3D3D3;
+    border-top: 2px double black;
+    margin: 0;
+    padding-bottom: 10%;
+}
+
+
+@media (min-width: 800px)  {
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 50%;
+        padding: 10px;
+    }
+}
+.hide {
+    display: none;
+}
+
+#educataion_link:hover + .hide{
+    display:inline;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Images/logo.png" alt="logo" width="50" height="50">
+        <h1>HomePage</h1>
+    </header>
+    
+    <nav>
+        <a href="Homepage.html">Homepage</a>
+        <a href="Education.html" id="educataion_link">Education</a>
+        <!-- <span class="hide" id="accomplishment"><a href="AccomplishmentAndGoals.html">Accomplishment And Goals</a></span> -->
+        <a href="PersonalProjects.html">Personal Project</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Contacts.html">Contacts</a>
+    </nav>
+
+    <main>
+        <h2>About me</h2>
+        <p>Nam</p>
+    </main>
+    <aside>
+
+        <img src="Images/Man.png" alt="self portrait" id="portrait">
+        <figure id="figure">Self Portrait</figure>
+        <button onclick="document.getElementById('figure').innerHTML='Another picture'">
+            <figure>Change figure</figure>
+        </button>
+        <button onclick="document.getElementById('portrait').src ='Images/Woman.png'">
+            <figure>Change Image</figure>
+        </button><br><br>
+
+        <video width="320" height="240" controls>
+            <source src="Videos/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </aside>
+
+    <footer>
+        <h3>Contacts</h3>
+        <a>Phone</a>
+        <a>Email</a>
+        <a>Github</a>
+    </footer>
+
+</body>
+
+</html>
