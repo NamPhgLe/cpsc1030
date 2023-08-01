@@ -5,26 +5,43 @@
 body {
     font-family: Verdana, Arial, sans-serif;
     text-align: center;
-    margin: 1%;
-    padding: 1%;
 }
 
 header {
+    display: flex;
+    justify-content: center;
     margin: 2%;
     padding: 2%;
 }
 
 nav {
     border: 2px double black;
+    margin: 1%;
+    padding: 1%;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    margin: 2%;
-    padding: 2%;
+    color: black; 
 }
 
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 5%; 
+    margin-left: 5%;
+}
+
+ul #nav_list{
+    margin: 0;
+    padding: 0;
+}
 
 main {
     background-color: #D3D3D3;
@@ -40,6 +57,12 @@ main #hackatons {
 
 main #eductaion_list{
     list-style-type: none;
+}
+
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 aside {
@@ -65,10 +88,54 @@ footer {
         padding: 10px;
     }
 }
-.hide {
+
+#hide {
     display: none;
+    padding:0;
+    margin:0;
 }
 
-#educataion_link:hover + .hide{
-    display:inline;
+#homepage_link:hover{
+    border-bottom: 2px double black;
+    
 }
+
+#educataion_link:hover{
+    border-bottom: 2px double black;
+}
+
+#project_link:hover{
+    border-bottom: 2px double black;
+    
+}
+
+#skills_link:hover{
+    border-bottom: 2px double black;
+    
+}
+
+#contacts_link:hover{
+    border-bottom: 2px double black; 
+}
+
+#educataion_link:hover #hide {
+    display: block;
+    position: absolute;
+}
+
+/* 
+part 1 (2)
+about list 
+about folder access 
+
+part 2 (4)
+table 
+list 
+layout(normal flow, float, position, display)
+
+(small part)
+form
+javascript (grab info from html)
+
+grid/f/ex layout responsive and media query
+*/
